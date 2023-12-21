@@ -35,8 +35,8 @@ def epsilon_greedy_policy(Qtable, state, epsilon, actions):
     # Exploitation
     if rd.random() > epsilon:
         action_col = np.argmax(Qtable[state])
-        if Qtable[state][action_col] == Qtable[state][2]: # Favorecer jump no início
-            action_col = 2
+        # if Qtable[state][action_col] == Qtable[state][2]: # Favorecer jump no início
+        #     action_col = 2
         action = actions[action_col]
         print(f'Melhor ação para o estado {state}: {action}')
     # Exploration
