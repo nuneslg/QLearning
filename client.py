@@ -6,7 +6,7 @@ import numpy as np
 socket = cn.connect(2037)
 
 # Parameters
-alpha = 0.0 # Learning rate, 0 < alpha < 1, atualizações moderadas
+alpha = 0 # Learning rate, 0 < alpha < 1, atualizações moderadas
 gamma = 0.95 # Discout rate, 0 < gamma < 1, futuro com desconto
 epsilon = 0
 n_states = 96
